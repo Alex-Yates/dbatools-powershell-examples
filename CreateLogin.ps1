@@ -1,0 +1,2 @@
+$securePassword = Read-Host "Enter a secure password:" -AsSecureString
+New-DbaLogin -SqlInstance localhost -Login MyLogin -SecurePassword $securePassword -PasswordPolicyEnforced -PasswordExpirationEnabled

@@ -2,4 +2,4 @@
 $securePassword = ConvertTo-SecureString "Th!sI5Y0urP4ss" -AsPlainText -Force
 
 # Create the login using the New-DbaLogin cmdlet
-New-DbaLogin -SqlInstance localhost -Login MyLogin2 -SecurePassword $securePassword -PasswordPolicyEnforced -PasswordExpirationEnabled
+New-DbaLogin -SqlInstance localhost -Login MyLogin -SecurePassword $securePassword -PasswordPolicyEnforced -PasswordExpirationEnabled
